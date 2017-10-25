@@ -1,0 +1,82 @@
+@keyframes fadeIn
+	to
+		opacity 1
+		transform scale(1)
+
+[data-animation="fade-in"]
+	opacity 0
+	transform scale(.95)
+	animation 2s ease-out 1s forwards fadeIn
+
+@keyframes zap
+	5%
+		opacity .6
+	8%
+		opacity 0
+	10%
+		opacity .1
+		transform translate(0, 0)
+	11%
+		opacity .5
+		transform translate(-14px, 22px)
+	12%
+		opacity 0
+		transform translate(0, 0)
+	14%
+		opacity .1
+	15%
+		opacity .8
+	25%
+		opacity .1
+
+	35%
+		opacity 0
+		transform translate(0, 0)
+	36%
+		opacity 1
+		transform translate(4px, -15px)
+	37%
+		opacity 0
+		transform translate(0, 0)
+	42%
+		opacity 0
+	46%
+		opacity .5
+
+	47%
+		opacity .1
+	50%
+		opacity 1
+	55%
+		opacity .2
+	60%
+		opacity .75
+	62%
+		opacity 0
+	64%
+		opacity .1
+		transform translate(0, 0) skewX(0)
+	65%
+		opacity .8
+		transform translate(14px, 16px) skewX(4deg)
+	66%
+		opacity 0
+		transform translate(0, 0) skewX(0)
+	70%
+		opacity 0
+	75%
+		opacity .5
+	77%
+		opacity 1
+	82%
+		opacity .2
+	87%
+		opacity .6
+	91%
+		opacity .1
+	100%
+		opacity 0
+
+[data-animation="zap"]
+	opacity 0
+	animation 12s ease-in-out 4s infinite zap
